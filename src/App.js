@@ -28,19 +28,19 @@ function App() {
 				<div className="text-white pt-36 flex flex-col items-center text-xl">
 					<button
 						className="font-light h-10 w-9/12 border-b-2 pl-1 border-purple text-left transition duration-300 hover:bg-purple hover:text-black"
-						href="#">About
+						onClick={window.location.href="#about"}>About
 					</button>
 					<button
 						className="font-light mt-5 h-10 w-9/12 border-b-2 pl-1 border-green text-left duration-300 hover:bg-green hover:text-black"
-						href="#">Skills
+						onClick={window.location.href="#skills"}>Skills
 					</button>
 					<button
 						className="font-light mt-5 h-10 w-9/12 border-b-2 pl-1 border-blue text-left duration-300 hover:bg-blue hover:text-black"
-						href="#">Projects
+						onClick={window.location.href="#projects"}>Projects
 					</button>
 					<button
 						className="font-light mt-5 h-10 w-9/12 border-b-2 pl-1 border-red text-left duration-300 hover:bg-red hover:text-black"
-						href="#">Contact
+						onClick={window.location.href="#contact"}>Contact
 					</button>
 				</div>
 
@@ -59,13 +59,12 @@ function App() {
 				<h2 className="text-center text-4xl mt-6">Full Stack <span className="text-red">developer</span></h2>
 				<button
 					className="border-2 rounded border-blue text-blue p-2 mt-6 duration-300 hover:bg-blue hover:text-gray-dark">
-					Contact
-					Me
+					Contact Me
 				</button>
 			</div>
 
 			{/*About*/}
-			<div className="bg-black text-white pl-52 h-screen flex flex-col justify-center">
+			<div id="about" className="bg-black text-white pl-52 h-screen flex flex-col justify-center">
 				<h2 className="text-center text-4xl font-pressStart">About</h2>
 				<div className="flex flex-row justify-center pt-16 leading-8">
 					<p className="w-5/12 mr-4 text-justify">
@@ -89,13 +88,13 @@ function App() {
 			</div>
 
 			{/*Skills*/}
-			<div className="bg-gray-dark text-white pl-52 h-screen">
+			<div id="skills" className="bg-gray-dark text-white pl-52 h-screen">
 				<h2 className="text-center text-4xl font-pressStart mt-12">Skills</h2>
 
 			</div>
 
 			{/*Projects*/}
-			<div className="bg-black text-white pl-52 h-screen">
+			<div id="projects" className="bg-black text-white pl-52 h-screen">
 				<h2 className="text-center text-4xl font-pressStart mt-12">Projects</h2>
 				<div className="flex flex-col w-11/12 mt-6">
 					<ul className="">
@@ -112,13 +111,13 @@ function App() {
 			</div>
 
 			{/*Contact*/}
-			<div className="bg-black text-white pl-52 h-screen">
-				<h2 className="text-center text-4xl font-pressStart mt-12">Contact</h2>
-				<h3 className="text-center text-xl font-pressStart mt-12">I'll be happy to answer your questions!</h3>
+			<div id="contact" className="bg-grey text-white pl-52 h-screen flex flex-col items-center justify-center">
+				<h2 className="text-center text-4xl font-pressStart">Contact</h2>
+				<h3 className="text-center font-pressStart mt-6">I'll be happy to answer your questions!</h3>
 
 				{/*Contact Form container*/}
-				<div className={"w-8/12 m-auto"}>
-					<ContactForm />
+				<div className={"w-8/12 mt-6"}>
+					<ContactForm/>
 				</div>
 			</div>
 		</div>

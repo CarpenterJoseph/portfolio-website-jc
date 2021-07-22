@@ -15,22 +15,24 @@ class ContactForm extends React.Component {
 	}
 
 	handleSubmit(event) {
-		console.log(this.state.contactName + this.state.email + '')
+		//todo send email with info
 		event.preventDefault();
 	}
 
 	render() {
 		return (
 			<form className={"w-full"} onSubmit={this.handleSubmit}>
-				<input type="text" className={"bg-red w-full"} placeholder={"Name"} value={this.state.contactName}
+				<input type="text" className={"bg-white w-full p-1 rounded-sm text-black border-2"} placeholder={"Name"} value={this.state.contactName}
 				       onChange={(event) => this.setState({contactName: event.target.value})}/>
-				<input type="text" className={"bg-red w-full"} placeholder={"Email Address"} value={this.state.email}
+				<input type="text" className={"bg-white w-full mt-3 p-1 rounded-sm text-black border-2"} placeholder={"Email Address"} value={this.state.email}
 				       onChange={(event) => this.setState({email: event.target.value})}/>
-				<input type="text" className={"bg-red w-full"} placeholder={"Subject"} value={this.state.subject}
+				<input type="text" className={"bg-white w-full mt-3 p-1 rounded-sm text-black border-2"} placeholder={"Subject"} value={this.state.subject}
 				       onChange={(event) => this.setState({subject: event.target.value})}/>
-				<input type="text" className={"bg-red w-full"} placeholder={"Your Message"} value={this.state.message}
+				<textarea className={"bg-white w-full mt-3 p-1 pb-0 rounded-sm h-32 text-black border-2 max-h-96"} placeholder={"Your Message"} value={this.state.message}
 				       onChange={(event) => this.setState({message: event.target.value})}/>
-				<input type="submit" value="Submit"/>
+				<button type="submit" className={"mt-1 bg-grey border-2 rounded border-blue text-blue p-2 duration-300 float-right hover:bg-blue hover:text-gray-dark"}>
+					Send Message
+				</button>
 			</form>
 		)
 	}
