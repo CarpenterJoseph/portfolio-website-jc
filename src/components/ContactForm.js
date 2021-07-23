@@ -30,7 +30,7 @@ class ContactForm extends React.Component {
 				       onChange={(event) => this.setState({subject: event.target.value})}/>
 				<textarea className={"bg-white w-full mt-3 p-1 pb-0 rounded-sm h-32 text-black border-2 max-h-96"} placeholder={"Your Message"} value={this.state.message}
 				       onChange={(event) => this.setState({message: event.target.value})}/>
-				<button type="submit" className={"mt-1 bg-grey border-2 rounded border-blue text-blue p-2 duration-300 float-right hover:bg-blue hover:text-gray-dark"}>
+				<button type="submit" className={"font-pressStart mt-1 bg-grey border-2 rounded border-blue text-blue p-2 duration-300 float-right hover:bg-blue hover:text-gray-dark"}>
 					Send Message
 				</button>
 			</form>

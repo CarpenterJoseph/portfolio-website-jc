@@ -9,3 +9,7 @@
 .icon:hover {
     filter: brightness(2);
 }
+
+a {
+    scroll-behavior: smooth;
+}
