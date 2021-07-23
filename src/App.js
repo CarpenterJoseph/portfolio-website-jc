@@ -109,31 +109,6 @@ function App() {
 						<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>
 					</div>
 				</div>
-				{/*<div>*/}
-				{/*	<table className="w-10/12 mt-3 m-2 m-auto">*/}
-				{/*		<tr className="hover:bg-blue">*/}
-				{/*			<td className="w-4/12"><img src={projectPlaceholder}/></td>*/}
-				{/*			<td className="pl-3">*/}
-				{/*				<h3 className="text-md font-pressStart">Portfolio</h3>*/}
-				{/*				<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>*/}
-				{/*			</td>*/}
-				{/*		</tr>*/}
-				{/*		<tr className="hover:bg-blue">*/}
-				{/*			<td className="pt-3"><img src={projectPlaceholder}/></td>*/}
-				{/*			<td className="pl-3">*/}
-				{/*				<h3 className="text-md font-pressStart">Margarita Mania</h3>*/}
-				{/*				<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>*/}
-				{/*			</td>*/}
-				{/*		</tr>*/}
-				{/*		<tr className="hover:bg-blue pt-3">*/}
-				{/*			<td className=""><img src={projectPlaceholder}/></td>*/}
-				{/*			<td className="pl-3">*/}
-				{/*				<h3 className="text-md font-pressStart">Placeholder website</h3>*/}
-				{/*				<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>*/}
-				{/*			</td>*/}
-				{/*		</tr>*/}
-				{/*	</table>*/}
-				{/*</div>*/}
 			</section>
 
 			{/*Contact*/}
