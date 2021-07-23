@@ -39,15 +39,15 @@ function App() {
 				id="about"
 				className="bg-black text-white pl-52 ml-2 p-2 min-h-screen flex flex-col justify-center">
 				<h2 className="text-center text-4xl font-pressStart">About</h2>
-				<div className="flex flex-row justify-center mt-3 leading-8">
-					<p className="w-5/12 max-w-lg mr-4 text-justify">
+				<div className="flex flex-row justify-center leading-8 max-w-4xl m-auto mb-0 mt-3">
+					<p className="w-5/12 max-w-lg mr-2 text-justify">
 						I am a young American technologist who has had a life-long avid interest in programming.
 						I acquired my first taste of programming when I was in middle school, where we made basic
 						websites with HTML, CSS, and Javascript. In high school, I took every programming course
 						available to me. In my spare time I’ve built computers, created websites, and made mods
 						for video games.
 					</p>
-					<p className="w-5/12 max-w-xl ml-4 text-justify">
+					<p className="w-5/12 max-w-xl ml-2 text-justify">
 						Since high school, I’ve continued my education by studying computer science at North Hennepin
 						Community College after which I moved to Denmark to study web development at Business Academy
 						Aarhus. My passion and education make me a perfect candidate for an internship where I’ll be
@@ -71,32 +71,69 @@ function App() {
 			<section
 				id="projects"
 				className="bg-black text-white pl-52 ml-2 p-2 min-h-screen flex flex-col justify-center">
-				<h2 className="text-center text-4xl font-pressStart mt-12">Projects</h2>
+				<h2 className="text-center text-4xl font-pressStart">Projects</h2>
+				{/*Table container*/}
 				<div className="">
-					<table className="w-10/12 mt-3 p-2 m-auto">
-						<tr>
-							<td className="w-4/12"><img src={projectPlaceholder}/></td>
-							<td>
-								<h2 className="text-md font-pressStart">Placeholder website</h2>
-								<h3 className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</h3>
-							</td>
-						</tr>
-						<tr>
-							<td className="pt-3"><img src={projectPlaceholder}/></td>
-							<td>
-								<h2 className="text-md font-pressStart">Placeholder website</h2>
-								<h3 className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</h3>
-							</td>
-						</tr>
-						<tr>
-							<td className="pt-3"><img src={projectPlaceholder}/></td>
-							<td>
-								<h2 className="text-md font-pressStart">Placeholder website</h2>
-								<h3 className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</h3>
-							</td>
-						</tr>
-					</table>
+
 				</div>
+
+				{/*Portfolio*/}
+				<div className="cursor-pointer duration-300 w-10/12 m-auto mt-3 mb-0 p-3 flex flex-row items-center bg-gray-darkest hover:bg-gray">
+					<div className="w-4/12">
+						<img src={projectPlaceholder}/>
+					</div>
+					<div className="w-8/12 pl-3">
+						<h3 className="text-md font-pressStart">Portfolio</h3>
+						<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>
+					</div>
+				</div>
+
+				{/*Margarita Mania*/}
+				<div className="cursor-pointer duration-300 w-10/12 m-auto mt-3 mb-0 p-3 flex flex-row items-center bg-gray-darkest hover:bg-gray">
+					<div className="w-4/12">
+						<img src={projectPlaceholder}/>
+					</div>
+					<div className="w-8/12 pl-3">
+						<h3 className="text-md font-pressStart">Portfolio</h3>
+						<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>
+					</div>
+				</div>
+
+
+				<div className="cursor-pointer duration-300 w-10/12 m-auto mt-3 mb-0 p-3 flex flex-row items-center bg-gray-darkest hover:bg-gray">
+					<div className="w-4/12">
+						<img src={projectPlaceholder}/>
+					</div>
+					<div className="w-8/12 pl-3">
+						<h3 className="text-md font-pressStart">Portfolio</h3>
+						<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>
+					</div>
+				</div>
+				{/*<div>*/}
+				{/*	<table className="w-10/12 mt-3 m-2 m-auto">*/}
+				{/*		<tr className="hover:bg-blue">*/}
+				{/*			<td className="w-4/12"><img src={projectPlaceholder}/></td>*/}
+				{/*			<td className="pl-3">*/}
+				{/*				<h3 className="text-md font-pressStart">Portfolio</h3>*/}
+				{/*				<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>*/}
+				{/*			</td>*/}
+				{/*		</tr>*/}
+				{/*		<tr className="hover:bg-blue">*/}
+				{/*			<td className="pt-3"><img src={projectPlaceholder}/></td>*/}
+				{/*			<td className="pl-3">*/}
+				{/*				<h3 className="text-md font-pressStart">Margarita Mania</h3>*/}
+				{/*				<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>*/}
+				{/*			</td>*/}
+				{/*		</tr>*/}
+				{/*		<tr className="hover:bg-blue pt-3">*/}
+				{/*			<td className=""><img src={projectPlaceholder}/></td>*/}
+				{/*			<td className="pl-3">*/}
+				{/*				<h3 className="text-md font-pressStart">Placeholder website</h3>*/}
+				{/*				<p className="text-sm">This is a project about a podcast website where you can listen to a padcast and all that stuff.</p>*/}
+				{/*			</td>*/}
+				{/*		</tr>*/}
+				{/*	</table>*/}
+				{/*</div>*/}
 			</section>
 
 			{/*Contact*/}
